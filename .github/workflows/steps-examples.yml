@@ -1,7 +1,7 @@
 name: steps examples
 
 on:
-  push
+  workflow_dispatch
   
 jobs:
   hello_world_job:
@@ -16,4 +16,3 @@ jobs:
           the-caller: 'Myself'
       - run: echo random-number ${{ steps.step-caller.outputs.random-number }}
         shell: bash
-
